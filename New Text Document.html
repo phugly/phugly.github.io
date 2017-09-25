@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head> 
-	 <script src="test/testing.js"> </script> 
+	 <script >
+	    
+	function OpenMessage() {
+    	var userFrom= document.forms.Text.textFrom.value;
+    	
+    	var content = document.forms.Text.content.value;
+    	var text =  userFrom + " want to say that : " + content;
+    	
+	document.getElementById("display").innerHTML = text;
+    
+}</script> 
       
     </head>
     <body style="background-color: transparent; "> 	   	
