@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head> 
+    <head>  Testing in Progress
+	    
 	 <script >
 	    
-	function OpenMessage() {
-    	var userFrom= document.forms.Text.textFrom.value;
-    	
-    	var content = document.forms.Text.content.value;
-    	var text =  userFrom + " want to say that : " + content;
-    	
-	document.getElementById("display").innerHTML = text;
-    
-}</script> 
+			function OpenMessage() {
+			var userFrom= document.forms.Text.textFrom.value;
+
+			var content = document.forms.Text.content.value;
+			var text =  userFrom + " want to say that : " + content;
+
+			document.getElementById("display").innerHTML = text;
+
+			}
+	   </script> 
       
     </head>
     <body style="background-color: transparent; "> 	   	
-     	<form id="Text">  
-            From : <input type="text" name="textFrom">
-           
-		        Send a message : <input type="text" id="content">
-		        <button type="button" onclick="OpenMessage()">Submit </button>
-            <p id="display" style="color:hotpink"> </p>
+		<form id="Text">  
+			From : <input type="text" name="textFrom">
+			Send a message : <input type="text" id="content">
+			<button type="button" onclick="OpenMessage()">Submit </button>
+		        <p id="display" style="color:hotpink"> </p>
         </form>
     </body>
 </html>
