@@ -2,12 +2,9 @@
 <html>
     <head>  	
 	   
-	    
+	    <h1 id="header" style="color:hotpink;text-align: center;font-style:Bold;font-size: 100;"> Send your Message </h1> 
 	 <script >
-	    		function greetHeading (){
-			var content = "Send your message" ;
-			document.getElementById("header").innerHTML = content;
-			}
+	    		
 		 
 			function OpenMessage() {
 			var userFrom= document.forms.Text.textFrom.value;
@@ -21,7 +18,7 @@
 	   </script> 
 	    
 	    
-	    <h1 id="header"> </h1>  
+	    
       
     </head>
     <body style="background-color: transparent; "> 	   	
@@ -29,7 +26,7 @@
 			From : <input type="text" name="textFrom">
 			Send a message : <input type="text" id="content">
 			<button type="button" onclick="OpenMessage()">Submit </button>
-		        <p id="display" style="color:hotpink;"> </p>
+		         <p id="display" style="color:hotpink;text-align: center;font-style:italic;font-size: 200;"> </p>
         </form>
     </body>
 </html>
