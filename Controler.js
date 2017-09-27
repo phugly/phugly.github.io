@@ -16,7 +16,7 @@ $('#Savedata').on('click',function ( ) {
 		$.ajax ( {
 
 			type: 'POST',
-			url: '/api/Pool',
+			url: '/Pool',
 			data: file,
 			success: function(file) {
 				$pull.append('<li> name : '+ file.Firstname +', Lastname:' +file.Lastname + ' . ');
