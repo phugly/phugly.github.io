@@ -3,7 +3,7 @@
 
 
 	<head>Home Page
-		<script src="jquery-3.2.1.min.js"></script>
+		<script src="//github.com/jquery/jquery.git"></script>
 		<script src="Controler.js"></script>
 
 	</head>
