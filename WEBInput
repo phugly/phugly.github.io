@@ -4,7 +4,7 @@
 
 	<head>Home Page
 		<script src="//github.com/jquery/jquery.git"></script>
-		<script src="Controler.js"></script>
+		<script src="phugly.github.io/Controler.js"></script>
 
 	</head>
 
