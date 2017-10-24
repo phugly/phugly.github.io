@@ -4,7 +4,39 @@
 
 	<head>Home Page
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://phugly.github.io/Controler.js"></script>
+		<script >  
+	var $pull = $('#Pool');
+	var $Firstname = $('#First');
+	var $Lastname = $('#Last');
+$('#Savedata').on('click',function ( ) {
+
+		
+		var file =  
+		{
+			Firstname: $Firstname.val(),
+			Lastname: $Lastname.val(),
+		};
+		
+
+		$.ajax ( {
+
+			type: 'POST',
+			url: '/Pool',
+			data: file,
+			success: function(file) {
+				$pull.append('<li> name : '+ file.Firstname +', Lastname:' +file.Lastname + ' . ');
+
+			},
+			error: function()
+			{ 
+					alert('error');
+			}
+		});
+
+
+
+
+});</script>
 
 	</head>
 
