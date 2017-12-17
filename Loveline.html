@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+      
+	    <style type="text/css">
+         
+            h1 {
+            text-align: left;
+            font-family: Ariel;
+            font-style: oblique;
+            font-weight: normal;
+            font-size: 85px;
+
+            border-bottom: 2px solid pink; 
+             }
+            
+             button {
+                font-family: Ariel ;
+                font-weight: lighter;
+                font-style: italic;
+                font-size: 20px;
+             }
+             p.Normal{ color: hotpink;
+                font-family: Times ;
+                font-weight: lighter;
+                font-style: italic;
+                font-size: 35px;
+
+                border-bottom:   2px solid pink ;
+             }
+             p.Line { 
+                color: hotpink;
+                font-family: Times ;
+                font-weight: lighter;
+                font-style: italic;
+                font-size: 25px;
+               
+             }
+             span.red{ color: red;
+                font-family: Times ;
+                font-weight: bold;
+                font-style: normal;
+                font-size: 35px;
+
+             }
+              span.Blue{ color: blue;
+                font-family: Times ;
+                font-weight: bold;
+                font-style: normal;
+                font-size: 35px;
+
+             } 
+             span.gold{ color:     #FFDF00;
+                font-family: Times ;
+                font-weight: bold;
+                font-style: normal;
+                font-size: 35px;
+
+             }
+             span.box {
+                color:     red;
+                font-family: Times ;
+                font-weight: bold;
+                font-style: oblique;
+                font-size: 35px;
+                
+             }
+        </style>
+	   
+	    <h1 style="color:hotpink"> To My Other Half </h1>  
+	 <script > 
+    function OpenMessage() {
+        document.getElementById("display").style.display = "block" ;
+        document.getElementById("display1").style.display = "block" ;
+        document.getElementById("but").style.display = "none";
+    }
+   
+   </script> 
+      
+    </head>
+    <body style="text-align: center;background-color: transparent;"> 	   	
+     	<form id="Text">  
+          
+		        <button id="but" type="button" onclick="OpenMessage()" display="center"> See the message </button>
+            <p id="display" class="Normal"style="display: none;"> Rose are <span class="red">RED</span> <br/> Violet are <span class="Blue">BLUE</span> <br/>You are my <span class="gold" >SUN SHINE</span> <br/> ... and <span class="box">I LOVE YOU </span> </p>
+            <p id="display1" class="Line" style="display: none;text-align: right;"> Your Mistery Lover </p>
+        </form>
+    </body>
+</html>
